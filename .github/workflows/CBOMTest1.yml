@@ -23,6 +23,11 @@ jobs:
       - name: Revisar archivos en el workspace
         run: ls -l
 
+      # Buscar CBOM generado
+      - name: Buscar CBOM generado
+        run: find . -name "*.cbom" -print
+
+
       # Allow you to persist CBOM after a job has completed, and share 
       # that CBOM with another job in the same workflow.
       - name: Create and publish CBOM artifact
