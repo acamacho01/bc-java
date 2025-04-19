@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Create CBOM
-        uses: PQCA/cbomkit-action@v1.1.0
+        uses: PQCA/cbomkit-action@v1.1.1-alpha
         id: cbom
 
       # Verificar salida del paso CBOM
