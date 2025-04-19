@@ -19,9 +19,6 @@ jobs:
       - name: Verificar salida del paso CBOM
         run: echo "Filename:${{ steps.cbom.outputs.filename }}"
         
-      # Verifica la ruta
-      - name: Verifica la ruta
-        run: echo "PathParaRei:${{pwd}}"
 
       # Verificar manualmente la existencia del archivo
       - name: Revisar archivos en el workspace
