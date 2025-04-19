@@ -19,6 +19,10 @@ jobs:
       - name: Verificar salida del paso CBOM
         run: echo "Filename:${{ steps.cbom.outputs.filename }}"
 
+      # Verificar manualmente la existencia del archivo
+      - name: Revisar archivos en el workspace
+        run: ls -l
+
       # Allow you to persist CBOM after a job has completed, and share 
       # that CBOM with another job in the same workflow.
       - name: Create and publish CBOM artifact
